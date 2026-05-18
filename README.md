@@ -19,12 +19,12 @@
 [![Forks](https://img.shields.io/github/forks/EricSui1010/gsd-agent.svg?style=social&label=Fork)](https://github.com/EricSui1010/gsd-agent/network/members)
 
 <!-- Feature Badges -->
-![Agents](https://img.shields.io/badge/agents-19-blueviolet?style=flat-square)
-![Reviews](https://img.shields.io/badge/reviews-6D-green?style=flat-square)
+![Agents](https://img.shields.io/badge/agents-13-blueviolet?style=flat-square)
+![Reviews](https://img.shields.io/badge/reviews-Multi-green?style=flat-square)
 ![TDD](https://img.shields.io/badge/TDD-enforced-yellow?style=flat-square)
-![Gatekeeper](https://img.shields.io/badge/Gatekeeper-Constitutional-red?style=flat-square)
+![Gatekeeper](https://img.shields.io/badge/Gatekeeper-Hooks-red?style=flat-square)
 ![Context V2](https://img.shields.io/badge/Context-V2-Smart_Subgraph-blue?style=flat-square)
-![FactVerifier++](https://img.shields.io/badge/FactVerifier-5_Layer_Chain-green?style=flat-square)
+![FactVerifier++](https://img.shields.io/badge/AgentSkills-5Layer-green?style=flat-square)
 
 **Get Shit Done, But Do It Right - With Code Intelligence, Security First & Adaptive Workflow**
 
@@ -85,7 +85,7 @@ GSD Agent 是一个专业的 AI 代码管理智能体（**v3.4**），专为 Tra
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │                        GSD AGENT V3.4 ARCHITECTURE                        │
-│                     (AI Code Management Expert System)                       │
+│                     (Universal Cross-Platform AI Code Management System)                       │
 └─────────────────────────────────────────────────────────────────────────────┘
 
 ┌─────────────────────────────────────────────────────────────────────────────┐
@@ -99,7 +99,7 @@ GSD Agent 是一个专业的 AI 代码管理智能体（**v3.4**），专为 Tra
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │              🛡️ 编译级验证逻辑 (Build-Level Verification) 🛡️               │
 │                                                                             │
-│    "像代码必须编译通过一样 - 每个产出物在交付给下一环节前都必须通过验证"      │
+│    "通过结构化知识图谱实现真正的代码智能 - 理解代码关系、追踪影响范围、精准搜索符号"      │
 │                                                                             │
 │    触发时机:                                                                 │
 │    ├─ ✅ 每个Task完成后 (TDD GREEN → 验证通过 → 才能进入REFACTOR)           │
@@ -178,7 +178,7 @@ GSD Agent 是一个专业的 AI 代码管理智能体（**v3.4**），专为 Tra
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │            🔄 智能上下文自动压缩系统 (Context Auto-Compression) 🔄          │
 │                                                                             │
-│    "自动管理上下文窗口，确保长期任务不会因token溢出而丢失关键信息"          │
+│    "Pre-commit 文件白名单/黑名单 + Pre-push 安全扫描 + 版本一致性检查"          │
 │                                                                             │
 │    自动触发条件:                                                             │
 │    ├─ ⚡ 任务完成时 (保存关键决策和产出)                                     │
@@ -254,206 +254,7 @@ GSD Agent 是一个专业的 AI 代码管理智能体（**v3.4**），专为 Tra
 | 🛡️ **Agent Skills 安全模型** | Static Analysis  Integrity  Audit  Isolation  Oversight 五层防护 | **从理论到实践** ⭐⭐⭐⭐ |
 | 🤖 **自适应深度共识** | SmallComplex 四级流程，小任务节省 80% 时间 | **全局视角** ⭐⭐⭐⭐ |
 
-#### 6D审查 vs 传统5D对比
 
-| 维度 | 原5D系统 | 6D增强系统 | 核心价值 |
-|------|---------|-----------|----------|
-| **基础检查** | L0-Basic | ①BasicChecker | L0++ + L2安全合并 |
-| **事实验证** | ❌ 无 | ②FactVerifier | **零容忍AI幻觉** |
-| **逻辑审查** | L1-Design | ③LogicReviewer | 控制流图深度分析 |
-| **方案审计** | ❌ 无 | ④SolutionAudit | **联网获取最佳实践** |
-| **完整度检查** | ❌ 无 | ⑤CompletenessChk | 确保项目完备无冗余 |
-| **动态测试** | 仅静态分析 | ⑥ComprehensiveTester | **证明代码真能跑通** |
-
----
-
-### 🧪 编译级验证逻辑详解 (Build-Level Verification)
-
-> **核心理念**: "如果你做了测试用例保证实际和你的修改一致，就不会忽略这些问题。
-> 这是最基础的，就像代码运行前必须要编译通过一样"
-
-#### 为什么不是只在推送时验证？
-
-| 场景 | 只在推送时验证 ❌ | 每个阶段都验证 ✅ |
-|------|------------------|-------------------|
-| 本地开发不推送 | 无法发现问题 | 每个Task/Wave都能发现 |
-| 交付中间产物 | 质量无保障 | 每个Module都有质量门禁 |
-| 团队协作 | 别人拿到的是有问题的代码 | 所有产出物都有质量保证 |
-| 快速迭代 | 问题积累到最后才爆发 | 问题立即发现立即修复 |
-
-#### 验证时机与内容
-
-```
-═══════════════════════════════════════════════════════════════
-           BUILD-LEVEL VERIFICATION CHECKPOINTS
-           (每个产出物交付前的质量门禁)
-═══════════════════════════════════════════════════════════════
-
-📍 验证点 1: Task完成后 (TDD GREEN 后)
-   ├─ 测试是否真的通过?
-   ├─ 代码是否符合最小实现原则?
-   └─ 是否有多余的功能?
-
-📍 验证点 2: Wave完成后 (Execution 结束时)
-   ├─ 所有Task的测试是否通过?
-   ├─ 代码风格是否一致?
-   └─ 是否有明显的逻辑问题?
-
-📍 验证点 3: Module完成后 (Pipeline 流转前)
-   ├─ 版本号一致性 (v3.2.1 统一)
-   ├─ 中英文完全同步
-   ├─ Badge区域正确 (version/agents/reviews)
-   ├─ 特性表完整性
-   ├─ 术语一致性 (6D/19Agent vs 5D/13Agent)
-   ├─ 安全扫描 (无硬编码密钥)
-   └─ 文档完整性
-
-📍 验证点 4: 最终交付前 (Phase 3 前)
-   ├─ 6D审查全部通过
-   ├─ Verification需求证明完成
-   ├─ 用户视角模拟器评分 ≥ 8分
-   └─ 错误案例库无重复错误
-
-📍 验证点 5 (可选): 推送前 (Gatekeeper Protocol)
-   ├─ 独立安全检查
-   ├─ 版本号最终确认
-   └─ Pre-Push放行许可证签署
-
-═══════════════════════════════════════════════════════════════
-```
-
-#### P0关键位置检查清单 (23项)
-
-```
-Step 1: VERSION File
-  [ ] VERSION file exists
-  [ ] VERSION = 3.2.1
-
-Step 2: README.md (9项)
-  [ ] Title version = 3.2.1
-  [ ] Badge version = 3.2.1
-  [ ] ZH intro has v3.2.1
-  [ ] EN intro version = 3.2.1
-  [ ] Feature title has version
-  [ ] ZH has Gatekeeper
-  [ ] EN has Gatekeeper
-  [ ] Uses Review x6
-  [ ] Uses 19 Agents
-
-Step 3: BASE_RULES.md (3项)
-  [ ] Has 3.2.1
-  [ ] Has Part E
-
-Step 4: SKILL.md (4项)
-  [ ] Version field = 3.2.1
-  [ ] Title = 3.2.1
-  [ ] Uses Review x6
-  [ ] Refs Part E
-
-Step 5: PUBLISH_TO_GITHUB.md (2项)
-  [ ] Has v3.2.1
-  [ ] Readable (no garbled text)
-
-Step 6: SOCIAL_MEDIA_GUIDE.md (2项)
-  [ ] Has v3.2.1
-  [ ] No old v3.2 references
-```
-
-#### 变更传播矩阵 & 错误案例库
-
-| 变更类型 | 项目简介 | 特性表 | Badge | SKILL.md |
-|---------|---------|--------|-------|----------|
-| 新Agent角色 | ✅✅ | ✅✅ | ✅✅ | ✅✅ |
-| 新审查维度 | ✅✅ | ✅✅ | ✅✅ | ✅✅ |
-
-| ID | 错误描述 | 预防措施 |
-|----|---------|---------|
-| #001 | README版本号未更新 | 变更传播矩阵 |
-| #002 | 英文README不同步 | 中英文同步检查 |
-| #003 | Gatekeeper缺失于特性表 | completeness check |
-| #004 | Gatekeeper缺失于项目简介 | **P0最严重!** |
-
----
-
-### 🔄 智能上下文自动压缩系统详解
-
-> **问题**: 长期开发任务中，上下文窗口会溢出，导致早期关键信息丢失
->
-> **解决方案**: 自动检测并压缩上下文，同时保证关键信息完整性和可操作性
-
-#### 自动触发条件
-
-| 触发场景 | 条件 | 动作 |
-|---------|------|------|
-| **任务完成** | Task/Wave/Module 完成时 | 保存关键决策和产出到 Checkpoint |
-| **新任务启动** | 下一个 Task/Wave 开始前 | 加载相关上下文，构建上下文包 |
-| **Token预警** | 上下文超过 150K tokens | 触发压缩，保留关键信息 |
-| **污染检测** | 发现无关或错误信息 | 清理污染源，恢复纯净上下文 |
-| **时间衰减** | 会话时间超过 30 分钟 | 压缩早期细节，保留决策摘要 |
-
-#### 压缩策略 (三层过滤)
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                   CONTEXT COMPRESSION STRATEGY               │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  📦 Layer 1: 保留 (100% 完整性)                              │
-│  ├─ 关键决策记录 (DECISIONS.md)                              │
-│  ├─ 验收标准和需求对齐                                       │
-│  ├─ 架构约束和技术选型                                       │
-│  ├─ 领域术语和共享语言 (CONTEXT.md)                          │
-│  └─ 错误教训和模式 (PATTERNS.md)                             │
-│                                                             │
-│  📝 Layer 2: 压缩 (保留摘要+索引)                            │
-│  ├─ 详细实现过程 → 决策摘要                                  │
-│  ├─ 重复代码块 → 引用+签名                                   │
-│  ├─ 长对话 → 结论+关键论点                                   │
-│  └─ 测试输出 → 通过/失败+关键指标                            │
-│                                                             │
-│  🗑️ Layer 3: 丢弃 (保留追溯索引)                             │
-│  ├─ 已解决的中间调试状态                                     │
-│  ├─ 失败的尝试路径 (已记录到错误案例库)                       │
-│  ├─ 临时变量和探索性代码                                     │
-│  └─ 重复的确认信息                                          │
-│                                                             │
-│  🔗 保留完整追溯链 (需要时可从Checkpoint展开原始内容)          │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### 质量保证指标
-
-| 指标 | 目标值 | 说明 |
-|------|--------|------|
-| **关键信息完整性** | = 100% | 绝不丢失重要决策和约束 |
-| **可操作性** | ≥ 90% | 压缩后仍可直接继续工作 |
-| **可审计性** | 完整 | 保留完整的决策追溯链 |
-| **压缩比** | 40-60% | 根据内容密度动态调整 |
-
-#### Context Mode 自动构建
-
-每个 Wave 开始前自动执行：
-
-```yaml
-context_auto_build:
-  trigger: "每个Wave启动时"
-  
-  inputs:
-    - related_artifacts: "15个相关文件"
-    - session_state: "当前会话状态"
-    - milestone_signals: "Milestone进度信号"
-    - knowledge_base: ".gsd/knowledge/*"
-  
-  output: "上下文包 (Context Package)"
-  
-  benefits:
-    vs_manual: "无需手动组装上下文"
-    vs_no_context: "避免无关信息干扰"
-    consistency: "每次都使用相同的上下文结构"
-```
-
----
 
 ## English
 
