@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@colbymchenry/codegraph": "^0.7.9",
+    "better-sqlite3": "^12.10.0"
+  }
+}

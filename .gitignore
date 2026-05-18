@@ -1,0 +1,154 @@
+# ============================================
+# GSD Agent v3.4 - Git Ignore Configuration
+# 🎯 Clean Repository: Only Core Source Code
+# ============================================
+
+# === Dependencies ===
+node_modules/
+.pnp
+.pnp.js
+
+# === Testing & Coverage ===
+coverage/
+.nyc_output/
+
+# === Build Output ===
+dist/
+build/
+out/
+bin/
+obj/
+
+# === IDE & Editor ===
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.sublime-workspace
+*.sublime-project
+
+# === Operating System ===
+.DS_Store
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+
+# === Logs ===
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# === Environment Files (CRITICAL - Security Rule #0) ===
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+
+# === Secrets & Credentials (NEVER COMMIT!) ===
+credentials.json
+secrets.yml
+secrets.yaml
+*.pem
+*.key
+*.p12
+*.pfx
+*.csr
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+*.gpg
+*.asc
+keystore.jks
+
+# === Package Management ===
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# === Cache ===
+.cache/
+.parcel-cache/
+.eslintcache
+.vite/
+.turbo/
+.nuxt/
+.next/
+.output/
+
+# === Temporary Files ===
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.backup
+*.orig
+
+# === GSD Agent: Temporary/Tool Scripts (NOT SOURCE CODE) ===
+# These are utility scripts used during development, not core product
+*fix-*.ps1
+*check-*.ps1
+*verify-*.ps1
+*test-*.ps1
+*test-*.ts
+*convert-*.ps1
+*deep-review.ps1
+*final-check.ps1
+push-to-github.ps1
+version-checker.ps1
+cleanup-*.ps1
+
+# === GSD Agent: Scan/Log Output Files ===
+c-drive-scan*.txt
+c-scan*.txt
+cg-mcp-test.txt
+cg-query*.txt
+cg-status.txt
+check-encoding.txt
+check-git-history.txt
+check-line.txt
+
+# === Personal Files (NEVER COMMIT!) ===
+微信公众号文章_*.md
+个人笔记_*.md
+*_用千问点了一次外卖.md
+*_外卖.md
+*_文章_*.md
+
+# === Documentation Reports (Optional - keep clean) ===
+CODEGRAPH_*_REPORT.md
+CODEGRAPH_*_GUIDE.md
+COMPLETION_REPORT.md
+LESSONS_LEARNED_*.md
+MCP_EXPLORATION_GUIDE.md
+PUBLISH_TO_GITHUB.md
+SOCIAL_MEDIA_GUIDE.md
+CHANGELOG.md (if auto-generated)
+
+# === Backup & History ===
+.gsd/checkpoints/*.bak
+.gsd/temp/
+.trae/skills/gsd-agent/examples/TMP_*
+
+# === Lock Files ===
+*.lock
+*.db.lock
+
+# === CodeGraph Internal ===
+.codegraph/index/
+.codegraph/cache/
+.codegraph/*.db
+.codegraph/*.sqlite
+.codegraph/*.db-wal
+.codegraph/*.db-shm
+
+# === Misc ===
+*.tsv
+*.csv (unless data is part of the project)
+!src/**/*.csv

@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "codegraph": {
+      "command": "npx",
+      "args": ["@colbymchenry/codegraph", "serve", "--mcp"],
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  }
+}
