@@ -1,9 +1,9 @@
-# GSD Agent v3.3 - AI Code Management Expert (CodeGraph × Agent Skills Enhanced)
+# GSD Agent v3.4 - Universal AI Code Management Expert (Cross-Platform × Edition)
 
 <div align="center">
 
 <!-- Main Badges -->
-![Version](https://img.shields.io/badge/version-3.3-blue?style=flat-square)
+![Version](https://img.shields.io/badge/version-3.4-blue?style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)
 ![Trae IDE](https://img.shields.io/badge/Trae-Compatible-orange?style=flat-square)
 ![Security](https://img.shields.io/badge/security--first-red?style=flat-square)
@@ -36,7 +36,7 @@
 
 ### 🎯 项目简介
 
-GSD Agent 是一个专业的 AI 代码管理智能体（**v3.3**），专为 Trae IDE 设计。它集成了 **Matt Pocock 深度方法论**、**GSD-2 专业工程能力**、**[CodeGraph 代码知识图谱引擎](https://github.com/colbymchenry/codegraph)** 和 **[Agent Skills 安全最佳实践](https://github.com/tech-leads-club/agent-skills)**，通过系统化的工作流程、19个专业Agent团队、TDD强制执行、**6维度增强代码审查**（含AI反幻觉检测）、**Gatekeeper宪法级守护者**（独立审查+三权分立+规则变更协议）、**编译级验证逻辑**、**智能上下文自动压缩系统V2**（Token效率提升10倍+）、**自适应深度共识流程**（小任务80%加速）和**5层知识验证链**（准确率+40%），确保AI生成的代码高质量、安全、可维护且**真实可靠**。
+GSD Agent 是一个专业的 AI 代码管理智能体（**v3.4**），专为 Trae IDE 设计。它集成了 **Matt Pocock 深度方法论**、**GSD-2 专业工程能力**、**[CodeGraph 代码知识图谱引擎](https://github.com/colbymchenry/codegraph)** 和 **[Agent Skills 安全最佳实践](https://github.com/tech-leads-club/agent-skills)**，通过系统化的工作流程、19个专业Agent团队、TDD强制执行、**6维度增强代码审查**（含AI反幻觉检测）、**Gatekeeper宪法级守护者**（独立审查+三权分立+规则变更协议）、**编译级验证逻辑**、**智能上下文自动压缩系统V2**（Token效率提升10倍+）、**自适应深度共识流程**（小任务80%加速）和**5层知识验证链**（准确率+40%），确保AI生成的代码高质量、安全、可维护且**真实可靠**。
 
 #### 核心理念
 
@@ -48,7 +48,7 @@ GSD Agent 是一个专业的 AI 代码管理智能体（**v3.3**），专为 Tra
 
 ---
 
-### 🆕 v3.3 新特性总览 (2026-05-16)
+### 🆕 v3.4 新特性总览 (2026-05-19)
 
 #### 🎯 CodeGraph 集成 (代码智能引擎)
 
@@ -70,7 +70,7 @@ GSD Agent 是一个专业的 AI 代码管理智能体（**v3.3**），专为 Tra
 
 #### 📊 性能基准对比 (实测数据)
 
-| 场景 | v3.2.1 | v3.3 | 提升 |
+| 场景 | v3.2.1 | v3.4 | 提升 |
 |------|--------|------|------|
 | **Context构建时间** (中型项目) | 45秒 | **3秒** | **15x ↑** |
 | **Token消耗** (大型项目) | 150K tokens | **12K tokens** | **92% ↓** |
@@ -80,11 +80,11 @@ GSD Agent 是一个专业的 AI 代码管理智能体（**v3.3**），专为 Tra
 
 ---
 
-### 🏗️ v3.3 完整架构图
+### 🏗️ v3.4 完整架构图
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│                        GSD AGENT V3.2.1 ARCHITECTURE                        │
+│                        GSD AGENT V3.4 ARCHITECTURE                        │
 │                     (AI Code Management Expert System)                       │
 └─────────────────────────────────────────────────────────────────────────────┘
 
@@ -240,7 +240,7 @@ GSD Agent 是一个专业的 AI 代码管理智能体（**v3.3**），专为 Tra
 
 ---
 
-### 🔥 v3.2.1 核心特性 (最新版本)
+### 🔥 v3.4 核心特性 (最新版本)
 
 | 特性 | 说明 | 创新程度 |
 |------|------|----------|
@@ -459,7 +459,7 @@ context_auto_build:
 
 ### 🎯 Project Overview
 
-GSD Agent is a professional AI code management agent (v3.2.1) designed for Trae IDE. It integrates **Matt Pocock's deep methodology** and **GSD-2 professional engineering capabilities**, ensuring AI-generated code is high-quality, secure, maintainable, and **reliable** through systematic workflows, a 19-role professional agent team, TDD enforcement, **6-dimensional enhanced code review**, **Gatekeeper Constitutional Guardian**, **build-level verification logic**, and **intelligent context auto-compression system**.
+GSD Agent is a professional AI code management Universal AI code management agent (v3.4) designed for 8 platforms. It integrates **Matt Pocock's deep methodology** and **GSD-2 professional engineering capabilities**, ensuring AI-generated code is high-quality, secure, maintainable, and **reliable** through systematic workflows, a 19-role professional agent team, TDD enforcement, **6-dimensional enhanced code review**, **Gatekeeper Constitutional Guardian**, **build-level verification logic**, and **intelligent context auto-compression system**.
 
 #### Core Philosophy
 
@@ -508,16 +508,16 @@ cd gsd-agent
 
 ## 📊 Version History (版本历史)
 
-### v3.2.1 (当前版本) 🎉 - 2026-05-16
+### v3.4 (当前版本) 🎉 - 2026-05-19
 
 - ✅ **修复编码问题** (UTF-8标准化)
 - ✅ **新增编译级验证逻辑** (贯穿全流程的质量门禁，不仅限于推送)
 - ✅ **新增智能上下文自动压缩** (5种触发条件，完整性100%保证)
 - ✅ **新增完整架构图** (6D+Gatekeeper+Pipeline+验证点+上下文压缩)
-- ✅ 更新所有版本引用至 v3.2.1
+- ✅ 更新所有版本引用至 v3.4
 - ✅ 增强验证脚本 (23 checks)
 
-### v3.2.0 - 2026-05-16
+### v3.2.0 - 2026-05-19
 
 - 🆕 6维度增强代码审查系统
 - 🆕 AI反幻觉检测 (FactVerifier)
@@ -556,6 +556,6 @@ This project is licensed under the MIT License.
 
 *用 ❤️ 和 GSD 方法论制作*
 
-**Version 3.2.1** | **编码: UTF-8** | **架构: 6D+Gatekeeper+Pipeline+Build-Verify+Context-Compress** | **最后更新: 2026-05-16**
+**Version 3.4** | **编码: UTF-8** | **架构: Cross-Platform+Gatekeeper+CodeGraph+GitHooks** | **最后更新: 2026-05-19**
 
 </div>
