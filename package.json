@@ -1,6 +1,1 @@
-{
-  "dependencies": {
-    "@colbymchenry/codegraph": "^0.7.9",
-    "better-sqlite3": "^12.10.0"
-  }
-}
+{"name": "gsd-agent", "version": "1.0", "description": "GSD Agent v1.0 - AI Code Management Expert with Deep Consensus, Multi-Agent Orchestration, TDD Enforcement, 6D Review, Gatekeeper Security, CodeGraph Integration, and Cross-Platform Support", "license": "MIT", "dependencies": {"@colbymchenry/codegraph": "^0.7.9", "better-sqlite3": "^12.10.0"}}

@@ -1,46 +1,9 @@
 # Multi-Agent Orchestration Workflow
 
+> **Version**: GSD Agent v1.0
 > **Source**: GSD-2 enhanced with Matt Pocock methodology
 > **Purpose**: Professional team-based execution with specialized agents
-> **Scale**: Research(×4) → Plan(2) → Execute(N) → Review(5) → Verify(2)
-
----
-
-## Team Composition
-
-```
-                    ┌─────────────────────────┐
-                    │   GSD Agent v3.0        │
-                    │   (Orchestrator)        │
-                    └───────────┬─────────────┘
-                                │
-        ┌───────────────────────┼───────────────────────┐
-        │                       │                       │
-        ▼                       ▼                       ▼
-┌───────────────┐     ┌───────────────┐     ┌───────────────┐
-│  RESEARCH     │     │  PLANNING     │     │  EXECUTION    │
-│  TEAM (×4)    │     │  TEAM (2)     │     │  TEAM (N)     │
-│               │     │               │     │               │
-│ • R1: Feasibility│    │ • Planner     │     │ • Executor-1  │
-│ • R2: Reference │    │ • Checker     │     │ • Executor-2  │
-│ • R3: Risks    │     │               │     │ • Executor-N  │
-│ • R4: Best     │     │               │     │               │
-│   Practices    │     │               │     │               │
-└───────────────┘     └───────────────┘     └───────────────┘
-        │                       │                       │
-        │                       │                       │
-        ▼                       ▼                       ▼
-┌───────────────┐     ┌───────────────┐     ┌───────────────┐
-│  REVIEW       │     │  VERIFICATION │     │  QUALITY      │
-│  TEAM (5)     │     │  TEAM (2)     │     │  GATES        │
-│               │     │               │     │               │
-│ • L0-Basic    │     │ • Verifier    │     │ • TDD Check   │
-│ • L1-Design   │     │ • Debugger    │     │ • Coverage ≥80%│
-│ • L2-Security │     │               │     │ • Reviews Pass │
-│ • ZoomOut     │     │               │     │ • No Critical  │
-│ • Consistency │     │               │     │ • Rules Comply │
-└───────────────┘     └───────────────┘     └───────────────┘
-```
+> **Scale**: Research(×4) → Plan(2) → Execute(N) → Review(6) → Verify(2)
 
 ---
 
